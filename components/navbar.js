@@ -40,7 +40,9 @@ const Navbar = props => {
     const hasMounted = useHasMounted()
     console.log({ hasMounted })
 
-    if (hasMounted) {
+    if (!hasMounted) {
+        return null
+    } else {
         return (
             <Box
                 position="fixed"
