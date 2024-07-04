@@ -23,22 +23,22 @@ padding: 10px;
 
 const Logo = () => {
     return (
-      (<Link href="/" scroll={false}>
-  
-        <LogoBox>
-          <StarIcon/>
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Jimy
-          </Text>
-        </LogoBox>
-  
-      </Link>)
-    );
+      <Link href="/" scroll={false} passHref>
+        
+          <LogoBox>
+            <StarIcon/>
+            <Text
+              color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+              fontFamily='M PLUS Rounded 1c", sans-serif'
+              fontWeight="bold"
+              ml={3}
+            >
+              Jimy
+            </Text>
+          </LogoBox>
+        
+      </Link>
+    )
   }
 
 export default Logo
