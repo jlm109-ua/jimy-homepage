@@ -38,7 +38,7 @@ const LinkItem = ({ href, path, children}) => {
 const Navbar = props => {
     const { path } = props
     const hasMounted = useHasMounted()
-    console.log({ hasMounted })
+    //console.log({ hasMounted })
 
     if (!hasMounted) {
         return null
