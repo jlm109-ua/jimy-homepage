@@ -17,6 +17,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './language-switcher'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
@@ -36,6 +38,8 @@ const LinkItem = ({ href, path, children}) => {
 }
 
 const Navbar = props => {
+    const { t } = useTranslation('common')
+
     const { path } = props
     const hasMounted = useHasMounted()
     //console.log({ hasMounted })
@@ -74,12 +78,11 @@ const Navbar = props => {
                         flexGrow={1}
                         mt={{base: 4, nmd: 0}}
                     >
-                        <LinkItem href="/works" path={path}>Works</LinkItem>
-                        <LinkItem href="/education" path={path}>Education</LinkItem>
-                        <LinkItem href="/posts" path={path}>Posts</LinkItem>
+                        <LinkItem href="/works" path={path}>{t('work')}</LinkItem>
                     </Stack>
-                    <Box flex={1} align="right">
-                        <ThemeToggleButton />
+                    <Box flex={1} align="right" margin-right={1}>
+                        <LanguageSwitcher />
+                        <ThemeToggleButton/>
                         <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                             <Menu>
                                 <MenuButton
@@ -90,13 +93,7 @@ const Navbar = props => {
                                 />
                                 <MenuList>
                                     <NextLink href="/works" passHref>
-                                        <MenuItem as="a">Works</MenuItem>
-                                    </NextLink>
-                                    <NextLink href="/education" passHref>
-                                        <MenuItem as="a">Education</MenuItem>
-                                    </NextLink>
-                                    <NextLink href="/posts" passHref>
-                                        <MenuItem as="a">Posts</MenuItem>
+                                        <MenuItem as="a">{t('work')}</MenuItem>
                                     </NextLink>
                                 </MenuList>
                             </Menu>
