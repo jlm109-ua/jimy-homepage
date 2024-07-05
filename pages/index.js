@@ -8,6 +8,8 @@ import { BioSection, BioYear, BioText } from '../components/bio';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import useHasMounted from '../components/useHasMounted';
+import Layout from '../components/layouts/article';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 const Page = () => {
     const { t } = useTranslation('common');
@@ -30,77 +32,84 @@ const Page = () => {
         return null
     } else {
         return (
-            <Container>
-                <Box 
-                    borderRadius="lg" 
-                    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-                    p={3} 
-                    align="center" 
-                    mb={6} 
-                    textColor={useColorModeValue('black', 'white')}
-                >
-                    {t('catch')}
-                </Box>
-                <Box display={{ md: 'flex' }}>
-                    <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title" textColor="darkred" mb={2}>
-                            Juan Llinares
+            <Layout>
+                <Container>
+                    <Box 
+                        borderRadius="lg" 
+                        bg={'#008080'} 
+                        p={3} 
+                        align="center" 
+                        mb={6} 
+                        textColor={useColorModeValue('white', 'black')}
+                    >
+                        {t('welcome')}
+                    </Box>
+                    <Box display={{ md: 'flex' }}>
+                        <Box flexGrow={1}>
+                            <Heading as="h2" variant="page-title" textColor="#008080" mb={2}>
+                                Juan Llinares
+                            </Heading>
+                            <p>{t('subtitle')}</p>
+                        </Box>
+                    </Box>
+                    <Box 
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        align="center"
+                    >
+                        PFP
+                    </Box>
+
+                    <Section delay={0.1}>
+                        <Heading as="h3" variant="section-title">
+                            {t('about-title')}
                         </Heading>
-                        <p>{t('subtitle')}</p>
-                    </Box>
-                </Box>
-                <Box 
-                    flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    align="center"
-                >
-                    PFP
-                </Box>
+                        <Paragraph>
+                            {t('about-text')}
+                        </Paragraph>
+                        <Box align="center" my={4}>
+                            <NextLink href="/works" passHref>
+                                <Button 
+                                    rightIcon={<ChevronRightIcon/>} 
+                                    bg="#008080"
+                                    _hover={{ bg: '#006666' }}
+                                    textColor={useColorModeValue('white', 'black')}
+                                >
+                                    {t('my-portfolio')}
+                                </Button>
+                            </NextLink>
+                        </Box>
+                    </Section>
 
-                <Section delay={0.1}>
-                    <Heading as="h3" variant="section-title">
-                        {t('about-title')}
-                    </Heading>
-                    <Paragraph>
-                        {t('about-text')}
-                    </Paragraph>
-                    <Box align="center" my={4}>
-                        <NextLink href="/works" passHref>
-                            <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-                                {t('my-portfolio')}
-                            </Button>
-                        </NextLink>
-                    </Box>
-                </Section>
+                    <Section delay={0.2}>
+                        <Heading as="h3" variant="section-title">
+                            {t('bio-title')}
+                        </Heading>
+                        <BioSection>
+                            <BioYear>2002</BioYear>
+                            <BioText>{t('bio-2002')}</BioText>
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2020</BioYear>
+                            <BioText>{t('bio-2020')}</BioText>
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2020 to present</BioYear>
+                            <BioText>{t('bio-2020-present')}</BioText>
+                        </BioSection>
+                    </Section>
 
-                <Section delay={0.2}>
-                    <Heading as="h3" variant="section-title">
-                        {t('bio-title')}
-                    </Heading>
-                    <BioSection>
-                        <BioYear>2002</BioYear>
-                        <BioText>{t('bio-2002')}</BioText>
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>2020</BioYear>
-                        <BioText>{t('bio-2020')}</BioText>
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>2020 to present</BioYear>
-                        <BioText>{t('bio-2020-present')}</BioText>
-                    </BioSection>
-                </Section>
-
-                <Section delay={0.3}>
-                    <Heading as="h3" variant="section-title">
-                        {t('I-love-title')}
-                    </Heading>
-                    <Paragraph>
-                        {t('I-love-text')} 
-                    </Paragraph>
-                </Section>
-            </Container>
+                    <Section delay={0.3}>
+                        <Heading as="h3" variant="section-title">
+                            {t('I-love-title')}
+                        </Heading>
+                        <Paragraph>
+                            {t('I-love-text')} 
+                        </Paragraph>
+                    </Section>
+                </Container>
+            </Layout>
         )
     }
 }

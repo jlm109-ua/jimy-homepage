@@ -11,6 +11,7 @@ const ThemeToggleButton = () => {
             icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
             onClick={toggleColorMode}
             size='sm'
+            style={{marginLeft: '0.5em'}}
         />
     )
 }

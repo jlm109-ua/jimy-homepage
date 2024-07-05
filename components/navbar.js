@@ -18,7 +18,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { useTranslation } from 'react-i18next'
-import LanguageSwitcher from './language-switcher'
+import LanguageSwitcher from './language-switcher-button'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
@@ -52,7 +52,7 @@ const Navbar = props => {
                 position="fixed"
                 as="nav"
                 w="100%"
-                bg={useColorModeValue('#ffffff40', '#20202380')}
+                bg={useColorModeValue('#dcd7d4', '#202023')}
                 style={{backdropFilter: 'blur(10px)'}}
                 zIndex={1}
                 {...props}
@@ -78,11 +78,13 @@ const Navbar = props => {
                         flexGrow={1}
                         mt={{base: 4, nmd: 0}}
                     >
-                        <LinkItem href="/works" path={path}>{t('work')}</LinkItem>
+                        <LinkItem href="/works" path={path}>{t('works')}</LinkItem>
                     </Stack>
                     <Box flex={1} align="right" margin-right={1}>
+
                         <LanguageSwitcher />
                         <ThemeToggleButton/>
+                        
                         <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                             <Menu>
                                 <MenuButton
