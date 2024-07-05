@@ -1,5 +1,5 @@
 {
-    "work": "Work",
+    "works": "Works",
 
 
     "catch": "Hello! I'm Jimy!",
@@ -17,5 +17,11 @@
     "bio-2020-present": "Studying Computer Science at the University of Alicante.",
 
     "I-love-title": "I love",
-    "I-love-text": "Programming, cars, graphic design, music, and Machine Learning."
+    "I-love-text": "Programming, cars, graphic design, music, and Machine Learning.",
+
+
+    "homepage-item-1": "My homepage!",
+    "homepage-item-1-desc": "COMPLETAR",
+    "homepage-item-2": "My project",
+    "homepage-item-2-desc": "COMPLETAR"
 }

@@ -31,7 +31,14 @@ const Page = () => {
     } else {
         return (
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} align="center" mb={6} textColor={'white'}>
+                <Box 
+                    borderRadius="lg" 
+                    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
+                    p={3} 
+                    align="center" 
+                    mb={6} 
+                    textColor={useColorModeValue('black', 'white')}
+                >
                     {t('catch')}
                 </Box>
                 <Box display={{ md: 'flex' }}>
