@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Button, Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, useColorModeValue } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
