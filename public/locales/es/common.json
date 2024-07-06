@@ -7,14 +7,17 @@
     "subtitle": "Desarrollador Software",
 
     "about-title": "Sobre mí",
-    "about-text": "Juan Llinares, también conocido como Jimy, es un desarrollador software y entusiasta de los coches. Está actualmente terminando su grado en Ingeniería Informática en la Universidad de Alicante. Es un apasionado de los coches y la tecnología y siempre está buscando nuevos desafíos con los que mejorar sus habilidades.",
+    "about-text": "Soy Juan Llinares, también conocido como Jimy, un apasionado de los coches y de la tecnología y siempre estoy buscando nuevos desafíos con los que mejorar mis habilidades. Actualmente estoy terminando mi grado en Ingeniería Informática en la Universidad de Alicante.",
 
     "my-portfolio": "Mi portfolio",
 
     "bio-title": "Biografía",
-    "bio-2002": "Nace en Villajoyosa, España.",
-    "bio-2020": "Terminó el bachillerato científico.",
-    "bio-2020-present": "Estudiando Ingeniería Informática en la Universidad de Alicante.",
+    "bio-item-1": "Nací en Villajoyosa",
+    "bio-item-1-desc": "Nací en Villajoyosa, un pequeño pueblo de la provincia de Alicante, España.",
+    "bio-item-2": "Terminé el Bachillerato Científico",
+    "bio-item-2-desc": "Terminé el Bachillerato Científico en el IES Marina Baixa.",
+    "bio-item-3": "Empecé el Grado en Ingeniería Informática",
+    "bio-item-3-desc": "Comencé el Grado en Ingeniería Informática en la Universidad de Alicante.",
 
     "I-love-title": "Me encanta",
     "I-love-text": "Programar, los coches, el diseño gráfico, la música y el Machine Learning.",

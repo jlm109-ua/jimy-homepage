@@ -7,14 +7,17 @@
     "subtitle": "Software Developer",
 
     "about-title": "About me",
-    "about-text": "Juan Llinares, also known as Jimy, is a software developer and a car enthusiast. He is currently finishing his degree in Computer Science at the University of Alicante. He is passionate about cars and technology, and he is always looking for new challenges to improve his skills.",
+    "about-text": "I am Juan Llinares, also known as Jimy, passionate about cars and technology, and always looking for new challenges to improve my skills. I am currently finishing his degree in Computer Science at the University of Alicante.",
 
     "my-portfolio": "My portfolio",
 
     "bio-title": "Biography",
-    "bio-2002": "Born in Villajoyosa, Spain.",
-    "bio-2020": "Finished scientific high school.",
-    "bio-2020-present": "Studying Computer Science at the University of Alicante.",
+    "bio-item-1": "Born in Villajoyosa",
+    "bio-item-1-desc": "Born in Villajoyosa, a small town in the province of Alicante, Spain.",
+    "bio-item-2": "Finished Scientific High School",
+    "bio-item-2-desc": "Finished the Spanish Scientific High School Baccalaureate in the IES Marina Baixa.",
+    "bio-item-3": "Started Computer Science Degree",
+    "bio-item-3-desc": "Started the Computer Science Degree at the University of Alicante.",
 
     "I-love-title": "I love",
     "I-love-text": "Programming, cars, graphic design, music, and Machine Learning.",

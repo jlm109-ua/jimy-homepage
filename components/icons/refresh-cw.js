@@ -17,4 +17,4 @@ const RefreshCWIcon = props => (
     </svg>
   )
   
-  export default RefreshCWIcon
+export default RefreshCWIcon
