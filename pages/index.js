@@ -107,7 +107,7 @@ const Page = () => {
                             <NextLink href="/works" passHref>
                                 <Button 
                                     rightIcon={<ChevronRightIcon/>} 
-                                    bg="#008080"
+                                    bg={bgColors}
                                     _hover={{ bg: '#006666' }}
                                     textColor={textColors}
                                 >
