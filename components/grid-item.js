@@ -39,7 +39,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
     );
 }
 
-export const WorkGridItem = ({ children, category, id, title, thumbnail }) => {
+export const WorkGridItem = ({ children, id, title, thumbnail }) => {
     return (
         <Box
             w="100%"

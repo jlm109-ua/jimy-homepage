@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Button, Container, Box, Heading, Image, useColorModeValue, Link } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
@@ -22,9 +22,9 @@ import 'react-vertical-timeline-component/style.min.css';
 
 // Icons
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import WorkIcon from '../components/icons/work';
-import SchoolIcon from '../components/icons/school';
-import StarIcon from '../components/icons/star';
+//import WorkIcon from '../components/icons/work';
+//import SchoolIcon from '../components/icons/school';
+//import StarIcon from '../components/icons/star';
 import BabyIcon from '../components/icons/baby';
 import BookIcon from '../components/icons/book';
 
@@ -109,7 +109,7 @@ const Page = () => {
                                     rightIcon={<ChevronRightIcon/>} 
                                     bg="#008080"
                                     _hover={{ bg: '#006666' }}
-                                    textColor={useColorModeValue('white', 'black')}
+                                    textColor={textColors}
                                 >
                                     {t('my-portfolio')}
                                 </Button>

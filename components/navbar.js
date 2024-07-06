@@ -44,6 +44,8 @@ const Navbar = props => {
     const hasMounted = useHasMounted()
     //console.log({ hasMounted })
 
+    const bgColors = useColorModeValue('#dcd7d4', '#202023')
+
     if (!hasMounted) {
         return null
     } else {
@@ -52,7 +54,7 @@ const Navbar = props => {
                 position="fixed"
                 as="nav"
                 w="100%"
-                bg={useColorModeValue('#dcd7d4', '#202023')}
+                bg={bgColors}
                 style={{backdropFilter: 'blur(10px)'}}
                 zIndex={1}
                 {...props}

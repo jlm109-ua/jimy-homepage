@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { IconButton, useColorModeValue } from '@chakra-ui/react'
 import { IoLanguage } from "react-icons/io5";
 
 const LanguageSwitcher = () => {
