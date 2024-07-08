@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import missingImage from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Works = () => {
     const hasMounted = useHasMounted();
@@ -16,12 +16,12 @@ const Works = () => {
     useEffect(() => {
         const fetchPreview = async () => {  
             try {
-                const res = await fetch(`/api/generatePreview?url=https://www.jimy-homepage.vercel.app`);
+                const preview = await fetch(`/api/generatePreview?url=${encodeURIComponent('https://www.jimy-homepage.vercel.app')}`);
                 
-                if (!res.ok) {
+                if (!preview.ok) {
                     throw new Error('Network response was not ok');
                 } else {
-                    const blob = await res.blob();
+                    const blob = await preview.blob();
                     const url = URL.createObjectURL(blob);
                     setPreviewUrl(url);
                 }
