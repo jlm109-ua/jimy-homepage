@@ -3,18 +3,18 @@ const BurgerIcon = props => (
         fill="none" 
         width="24px" 
         height="24px" 
-        viewBox="0 0 24 24" 
+        viewBox="0 0 192 192" 
         xmlns="http://www.w3.org/2000/svg" 
         stroke="#FFFFFF" 
-        strokeWidth="2"
+        strokeWidth="12"
         {...props}
     >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
-            <path stroke="#FFF" strokeLinejoin="round" strokeWidth="2" d="M12 2c-5.878 0-10.245 2.615-10.855 5.963C1.497 8.8 2.112 9.5 3 9.5h18c.888 0 1.503-.7 1.855-1.537C22.245 4.615 17.878 2 12 2Zm0 16c7.824 0 10.731-1.36 11.255-3.34.09-.357-.219-.66-.586-.66H3c-.367 0-.676.303-.586.66C1.269 16.64 4.176 18 12 18Z"></path>
-            <path stroke="#FFF" strokeLinecap="round" strokeWidth="2" d="M13.25 10.25v4.666m0 2.667v-2.667m0 0 2.333-1.25M19.75 10.25l-6.333 3.333m0 0L19.75 15.75"></path>
-            <path stroke="#FFF" strokeLinejoin="round" strokeWidth="2" d="M4.25 13h6.833c1.01 0 1.833.825 1.833 1.833s-.823 1.834-1.833 1.834H4.25v-3.667Zm0-3.666h5.833c1.01 0 1.833.825 1.833 1.833s-.823 1.833-1.833 1.833H4.25v-3.666Z"></path>
+            <path stroke="#FFF" strokeLinejoin="round" strokeWidth="12" d="M96 22c-35.27 0-64.269 15.796-67.667 36.017C27.967 60.196 29.79 62 32 62h128c2.209 0 4.033-1.804 3.667-3.983C160.269 37.796 131.27 22 96 22Zm0 148c46.946 0 64.55-8.151 67.528-20.037.537-2.143-1.319-3.963-3.528-3.963H32c-2.21 0-4.065 1.82-3.528 3.963C31.45 161.849 49.054 170 96 170Z"></path>
+            <path stroke="#FFF" strokeLinecap="round" strokeWidth="12" d="M106 82v28m0 16v-16m0 0 14-7.538M158 82l-38 20.462m0 0L158 126"></path>
+            <path stroke="#FFF" strokeLinejoin="round" strokeWidth="12" d="M34 104h41c6.075 0 11 4.925 11 11s-4.925 11-11 11H34v-22Zm0-22h35c6.075 0 11 4.925 11 11s-4.925 11-11 11H34V82Z"></path>
         </g>
     </svg>
 );
