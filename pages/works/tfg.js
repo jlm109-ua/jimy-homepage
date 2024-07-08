@@ -18,10 +18,10 @@ const TFG = () => {
     return (
         <Layout title="TFG">
             <Container>
-                <Heading>
+                <Title>
                     {t('tfg-title')}
                     <Badge ml={1}>2024</Badge>
-                </Heading>
+                </Title>
                 <P>
                     {t('tfg-desc')}
                 </P>
