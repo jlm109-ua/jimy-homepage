@@ -3,13 +3,13 @@
 
     "telepizza": "Telepizza",
     "telepizza-role": "Repartidor",
-    "left-telepizza": "Dejé Telepizza",
+    "left-telepizza": "Telepizza",
 
     "BUA": "BUA (Biblioteca de la Universidad de Alicante)",
     "BUA-role": "Técnico de Soporte Informático",
-    "left-BUA": "Dejé la BUA",
+    "left-BUA": "BUA",
 
     "bk": "Burger King",
     "bk-role": "Repartidor",
-    "left-bk": "Dejé Burger King"
+    "left-bk": "Burger King"
 }
