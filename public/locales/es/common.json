@@ -34,5 +34,8 @@
 
     "not-found": "Página no encontrada",
     "not-found-desc": "La página que buscas no existe.",
-    "back-home": "Volver a inicio"
+    "back-home": "Volver a inicio",
+
+
+    "loading": "Cargando..."
 }
