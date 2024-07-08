@@ -6,32 +6,11 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import missingImage from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
-import { useState, useEffect } from 'react';
+import LinkPreview from '../components/linkPreview';
 
 const Works = () => {
     const hasMounted = useHasMounted();
     const { t } = useTranslation('common');
-    const [previewUrl, setPreviewUrl] = useState(null);
-
-    useEffect(() => {
-        const fetchPreview = async () => {  
-            try {
-                const preview = await fetch(`/api/generatePreview?url=${encodeURIComponent('https://www.jimy-homepage.vercel.app')}`);
-                
-                if (!preview.ok) {
-                    throw new Error('Network response was not ok');
-                } else {
-                    const blob = await preview.blob();
-                    const url = URL.createObjectURL(blob);
-                    setPreviewUrl(url);
-                }
-            } catch (error) {
-                console.error('Error fetching preview: ', error);
-            }
-        };
-
-        fetchPreview();
-    }, []);
 
     if(!hasMounted) {
         return null
@@ -50,8 +29,9 @@ const Works = () => {
                             <WorkGridItem
                                 id="homepage"
                                 title={t('homepage-item-1')}
-                                thumbnail={previewUrl || missingImage}
+                                thumbnail={missingImage}
                             >
+                                <LinkPreview url={"https://www.jimy-homepage.vercel.app"}/>
                                 {t('homepage-item-1-desc')}
                             </WorkGridItem>
                             <WorkGridItem

@@ -1,21 +1,19 @@
 const { i18n } = require('./next-i18next.config');
-const withTM = require('next-transpile-modules')(['puppeteer-core']);
+const webpack = require('webpack');
 
-module.exports = withTM({
-    reactStrictMode: true,
-    i18n,
-    webpack: (config) => {
-        config.module.rules.push({
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/preset-env']
-                }
-            }
-        });
+module.exports = {
+  reactStrictMode: true,
+  i18n,
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        fs: false,
+        net: false,
+        tls: false,
+        child_process: false,
+      };
+    }
 
-        return config;
-    },
-});
+    return config;
+  },
+};
