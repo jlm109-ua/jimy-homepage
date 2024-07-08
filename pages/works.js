@@ -30,6 +30,7 @@ const Works = () => {
                             id="homepage"
                             title={t('homepage-item-1')}
                             thumbnail={missingImage}
+                            contentStyle={{ mb: 4 }}
                         >
                             {t('homepage-item-1-desc')}
                         </WorkGridItem>
@@ -37,6 +38,7 @@ const Works = () => {
                             id="otroProyecto"
                             title={t('homepage-item-2')}
                             thumbnail={missingImage}
+                            contentStyle={{ mb: 4 }}
                         >
                             {t('homepage-item-2-desc')}
                         </WorkGridItem>
