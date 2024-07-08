@@ -56,7 +56,6 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
                         alt={title}
                         className='grid-item-thumbnail'
                         placeholder='blur'
-                        borderColor={borderColors}
                     />
                     <LinkOverlay href={`/works/${id}`}>
                         <Text 
