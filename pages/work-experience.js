@@ -8,12 +8,16 @@ import 'react-vertical-timeline-component/style.min.css';
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import PizzaIcon from "../components/icons/pizza";
 import BookIcon from "../components/icons/book";
+import BurgerIcon from "../components/icons/bk";
 
 const WorkExperience = () => {
     const { t } = useTranslation('work-experience')
     const hasMounted = useHasMounted()
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
+    const leftBgColors = useColorModeValue('white', '#5e0a0a');
+    const invBgColors = useColorModeValue('white', '#008080');
+    const invLeftBgColors = useColorModeValue('white', '#5e0a0a');
 
     if(!hasMounted) {
         return null
@@ -33,7 +37,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="06/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: '#5e0a0a', color: 'black' }}
+                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 0 0 4px ' + invLeftBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<BookIcon />}
                     >
@@ -50,9 +54,9 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="05/2024 - Present"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={null}
+                        icon={<BurgerIcon />}
                     >
                         <h3
                             className='vertical-timeline-element-title'
@@ -74,7 +78,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="05/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: '#5e0a0a', color: 'white' }}
+                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 0 0 4px ' + invLeftBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<PizzaIcon />}
                     >
@@ -91,7 +95,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="09/2023"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                         icon={<BookIcon />}
                     >
@@ -115,7 +119,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="07/2022"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                         icon={<PizzaIcon />}
                     >
