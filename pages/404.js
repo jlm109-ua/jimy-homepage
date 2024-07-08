@@ -2,7 +2,6 @@ import NextLink from 'next/link'
 import { Container, Box, Heading, Text, Divider, Button } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import React, { Suspense } from 'react'
-import useHasMounted from '../components/useHasMounted'
 
 const NotFoundContent = () => {
     const { t } = useTranslation('common')
