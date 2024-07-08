@@ -38,7 +38,7 @@ const Page = () => {
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
-    const borderColors = useColorModeValue('whiteAlpha.800', '#008080');
+    const borderColors = useColorModeValue('#008080', 'whiteAlpha.800');
 
     if (!hasMounted) {
         return null
