@@ -1,4 +1,4 @@
-import { Container, Badge, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import { Title } from '../../components/work'
 import P from '../../components/paragraph'
