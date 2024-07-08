@@ -16,7 +16,7 @@ const TFG = () => {
     }
 
     return (
-        <Layout>
+        <Layout title="TFG">
             <Container>
                 <Heading>
                     {t('tfg-title')}

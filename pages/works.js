@@ -34,7 +34,7 @@ const Works = () => {
                             {t('homepage-item-1-desc')}
                         </WorkGridItem>
                         <WorkGridItem
-                            id="otroProyecto"
+                            id="tfg"
                             title={t('homepage-item-2')}
                             thumbnail={tfg}
                         >
