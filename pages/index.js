@@ -76,7 +76,6 @@ const Page = () => {
                             borderWidth={1} 
                             borderStyle="solid" 
                             display="inline-block"
-                            borderRadius="full"
                             src="/images/pfp.jpg"
                             alt="Profile image"
                         />
