@@ -53,21 +53,6 @@ const Page = () => {
     />
     */
 
-    /*
-    <BioSection>
-        <BioYear>2002</BioYear>
-        <BioText>{t('bio-2002')}</BioText>
-    </BioSection>
-    <BioSection>
-        <BioYear>2020</BioYear>
-        <BioText>{t('bio-2020')}</BioText>
-    </BioSection>
-    <BioSection>
-        <BioYear>2020 to present</BioYear>
-        <BioText>{t('bio-2020-present')}</BioText>
-    </BioSection>
-    */
-
     if (!hasMounted) {
         return null
     } else {
