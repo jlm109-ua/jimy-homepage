@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import missingImage from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
-import LinkPreview from '../components/linkPreview';
 
 const Works = () => {
     const hasMounted = useHasMounted();
@@ -31,7 +30,6 @@ const Works = () => {
                                 title={t('homepage-item-1')}
                                 thumbnail={missingImage}
                             >
-                                <LinkPreview url={"https://www.jimy-homepage.vercel.app"}/>
                                 {t('homepage-item-1-desc')}
                             </WorkGridItem>
                             <WorkGridItem
