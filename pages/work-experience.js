@@ -6,6 +6,8 @@ import { Container, Heading } from "@chakra-ui/react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useColorModeValue } from "@chakra-ui/color-mode";
+import PizzaIcon from "../components/icons/pizza";
+import BookIcon from "../components/icons/book";
 
 const WorkExperience = () => {
     const { t } = useTranslation('work-experience')
@@ -32,8 +34,8 @@ const WorkExperience = () => {
                         date="06/2024"
                         iconStyle={{ background: '##5e0a0a', color: 'white' }}
                         contentStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={null}
+                        contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
+                        icon={<BookIcon />}
                     >
                         <h3
                             className='vertical-timeline-element-title'
@@ -73,8 +75,8 @@ const WorkExperience = () => {
                         date="05/2024"
                         iconStyle={{ background: '##5e0a0a', color: 'white' }}
                         contentStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={null}
+                        contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
+                        icon={<PizzaIcon />}
                     >
                         <h3
                             className='vertical-timeline-element-title'
@@ -91,7 +93,7 @@ const WorkExperience = () => {
                         iconStyle={{ background: '#008080', color: 'white' }}
                         contentStyle={{ background: bgColors, color: textColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={null}
+                        icon={<BookIcon />}
                     >
                         <h3
                             className='vertical-timeline-element-title'
@@ -115,7 +117,7 @@ const WorkExperience = () => {
                         iconStyle={{ background: '#008080', color: 'white' }}
                         contentStyle={{ background: bgColors, color: textColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={null}
+                        icon={<PizzaIcon />}
                     >
                         <h3
                             className='vertical-timeline-element-title'
