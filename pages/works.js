@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import missingImage from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
+import generatePreview from '../components/generatePreview';
 
 const Works = () => {
     const hasMounted = useHasMounted();
@@ -28,7 +29,7 @@ const Works = () => {
                             <WorkGridItem
                                 id="homepage"
                                 title={t('homepage-item-1')}
-                                thumbnail={missingImage}
+                                thumbnail={generatePreview('https://www.jimy-homepage.vercel.app')}
                             >
                                 {t('homepage-item-1-desc')}
                             </WorkGridItem>
