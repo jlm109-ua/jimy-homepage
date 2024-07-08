@@ -6,11 +6,32 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import missingImage from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
-import generatePreview from '../components/generatePreview';
+import { useEffect } from 'react';
 
 const Works = () => {
     const hasMounted = useHasMounted();
     const { t } = useTranslation('common');
+    const [previewUrl, setPreviewUrl] = useState(null);
+
+    useEffect(() => {
+        const fetchPreview = async () => {  
+            try {
+                const res = await fetch(`/api/generatePreview?url=https://www.jimy-homepage.vercel.app`);
+                
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
+                } else {
+                    const blob = await res.blob();
+                    const url = URL.createObjectURL(blob);
+                    setPreviewUrl(url);
+                }
+            } catch (error) {
+                console.error('Error fetching preview: ', error);
+            }
+        };
+
+        fetchPreview();
+    }, []);
 
     if(!hasMounted) {
         return null
@@ -29,7 +50,7 @@ const Works = () => {
                             <WorkGridItem
                                 id="homepage"
                                 title={t('homepage-item-1')}
-                                thumbnail={generatePreview('https://www.jimy-homepage.vercel.app')}
+                                thumbnail={previewUrl || missingImage}
                             >
                                 {t('homepage-item-1-desc')}
                             </WorkGridItem>
