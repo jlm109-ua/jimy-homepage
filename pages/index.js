@@ -67,8 +67,9 @@ const Page = () => {
                     </Box>
                     <Box 
                         flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
+                        mt={{ base: 4, md: 4 }}
                         ml={{ md: 6 }}
+                        mr={{ md: 6 }}
                         align="center"
                     >
                         <Image 
