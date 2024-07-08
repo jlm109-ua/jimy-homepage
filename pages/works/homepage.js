@@ -1,12 +1,11 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
-    const { t } = useTransaltion('common')
+    const { t } = useTranslation('common')
     
     return (
         <Layout title="Homepage">
