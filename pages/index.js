@@ -81,6 +81,7 @@ const Page = () => {
                         align="center" 
                         mb={6} 
                         textColor={textColors}
+                        fontWeight={'bold'}
                     >
                         {t('welcome')}
                     </Box>
