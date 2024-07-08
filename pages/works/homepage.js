@@ -19,7 +19,7 @@ const Work = () => {
             <Container>
                 <Title>
                     {t('homepage-item-1')}
-                    <Badge>2024</Badge>
+                    <Badge ml={1}>2024</Badge>
                 </Title>
                 <P>
                     {t('homepage-item-1-desc')}
