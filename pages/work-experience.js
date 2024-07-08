@@ -33,7 +33,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="06/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: '#5e0a0a', color: 'white' }}
+                        contentStyle={{ background: '#5e0a0a', color: 'black' }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<BookIcon />}
                     >
