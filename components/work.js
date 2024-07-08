@@ -3,10 +3,16 @@ import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import useHasMounted from './useHasMounted'
 
 export const Title = ({ children }) => {
     const { t } = useTranslation('common')
-    
+    const hasMounted = useHasMounted()
+
+    if (!hasMounted) {
+        return null
+    } 
+
     return (
         <Box>
             <NextLink href="/works" passHref>
