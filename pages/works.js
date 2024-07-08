@@ -4,8 +4,9 @@ import useHasMounted from '../components/useHasMounted'
 import { WorkGridItem } from '../components/grid-item'
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { homepage, tfg } from '../public/images/missingImage.png'
 import Layout from '../components/layouts/article';
+import homepage from '../public/images/homepage.jpg'
+import tfg from '../public/images/tfg.jpg'
 
 const Works = () => {
     const hasMounted = useHasMounted();

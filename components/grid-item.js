@@ -2,7 +2,6 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import {Box, Text, LinkBox, LinkOverlay} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-import { useColorModeValue } from '@chakra-ui/color-mode'
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
     return (
