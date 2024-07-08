@@ -44,6 +44,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
         <Box
             w="100%"
             align="center"
+            mb={4}
         >
             <NextLink href={`/works/${id}`}>
                 <LinkBox cursor="pointer">
