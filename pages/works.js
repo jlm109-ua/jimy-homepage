@@ -23,14 +23,13 @@ const Works = () => {
                 </Heading>
                 <SimpleGrid
                     columns={[1, 1, 1]}
-                    gap={6}
+                    spacing="1em"
                 >
                     <Section>
                         <WorkGridItem
                             id="homepage"
                             title={t('homepage-item-1')}
                             thumbnail={missingImage}
-                            contentStyle={{ mb: 4 }}
                         >
                             {t('homepage-item-1-desc')}
                         </WorkGridItem>
@@ -38,7 +37,6 @@ const Works = () => {
                             id="otroProyecto"
                             title={t('homepage-item-2')}
                             thumbnail={missingImage}
-                            contentStyle={{ mb: 4 }}
                         >
                             {t('homepage-item-2-desc')}
                         </WorkGridItem>
