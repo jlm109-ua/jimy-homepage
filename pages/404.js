@@ -26,3 +26,5 @@ const NotFound = () => {
         </Container>
     )
 }
+
+export default NotFound
