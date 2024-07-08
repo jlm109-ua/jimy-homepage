@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
-import { serverSideTranslations } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export const Title = ({ children }) => {
     const { t } = useTranslation('common')

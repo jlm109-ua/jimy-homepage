@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Title } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Work = () => {
     const { t } = useTranslation('common')
