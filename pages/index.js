@@ -74,7 +74,7 @@ const Page = () => {
                     >
                         <Image 
                             borderColor={borderColors}
-                            borderWidth={1} 
+                            borderWidth={4} 
                             borderStyle="solid" 
                             display="inline-block"
                             src="/images/pfp.jpg"
