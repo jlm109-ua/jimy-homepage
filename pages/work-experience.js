@@ -8,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { useColorModeValue } from "@chakra-ui/color-mode";
 
 const WorkExperience = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('work-experience')
     const hasMounted = useHasMounted()
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
