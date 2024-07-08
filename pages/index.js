@@ -133,12 +133,12 @@ const Page = () => {
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BookIcon />}
                             >
-                                <h3 
-                                    className="vertical-timeline-element-title"
-                                >
+                                <h3>
                                     {t('bio-item-3')}
                                 </h3>
-                                <p>
+                                <p
+                                    className='vertical-timeline-element-title'
+                                >
                                     {t('bio-item-3-desc')}
                                 </p>
                             </VerticalTimelineElement>
