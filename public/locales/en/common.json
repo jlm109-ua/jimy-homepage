@@ -1,4 +1,7 @@
 {
+    "tab-title": "Jimy - Homepage",
+
+    
     "works": "Works",
 
 
@@ -26,5 +29,10 @@
     "homepage-item-1": "My homepage!",
     "homepage-item-1-desc": "COMPLETAR",
     "homepage-item-2": "My project",
-    "homepage-item-2-desc": "COMPLETAR"
+    "homepage-item-2-desc": "COMPLETAR",
+
+
+    "not-found": "Page not found",
+    "not-found-desc": "The page you are looking for does not exist.",
+    "back-home": "Back to home"
 }
