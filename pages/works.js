@@ -21,7 +21,7 @@ const Works = () => {
                         {t('works')}
                     </Heading>
                     <SimpleGrid
-                        columns={[1, 1, 2]}
+                        columns={[1, 1, 1]}
                         gap={6}
                     >
                         <Section>
