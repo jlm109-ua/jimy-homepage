@@ -50,6 +50,13 @@ const WorkExperience = () => {
                         >
                             {t('left-BUA')}
                         </h3>
+                        <p
+                            style={{
+                                fontWeight: 'normal'
+                            }}
+                        >
+                            {t('BUA-role')}
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -90,7 +97,14 @@ const WorkExperience = () => {
                             }}
                         >
                             {t('left-telepizza')}
-                        </h3>                                
+                        </h3>
+                        <p
+                            style={{
+                                fontWeight: 'normal'
+                            }}
+                        >
+                            {t('telepizza-role')}
+                        </p>                       
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
