@@ -27,9 +27,11 @@
 
 
     "homepage-item-1": "¡Mi página!",
-    "homepage-item-1-desc": "COMPLETAR",
-    "homepage-item-2": "Mi proyecto",
-    "homepage-item-2-desc": "COMPLETAR",
+    "homepage-item-1-desc": "Página personal de Jimy.",
+    "homepage-item-1-large": "Mi página personal. La he creado para mostrar mis trabajos y proyectos, y para que puedas conocerme un poco mejor. ¡Espero que te guste!",
+    "homepage-item-2": "Mi TFG",
+    "homepage-item-2-desc": "Mi Trabajo de Fin de Grado en la UA.",
+    "homepage-item-2-large": "Mi Trabajo de Fin de Grado en la Universidad de Alicante. Se trata de un proyecto de Machine Learning... COMPLETAR",
 
 
     "not-found": "Página no encontrada",

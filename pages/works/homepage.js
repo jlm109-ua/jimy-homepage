@@ -22,7 +22,7 @@ const Work = () => {
                     <Badge ml={1}>2024</Badge>
                 </Title>
                 <P>
-                    {t('homepage-item-1-desc')}
+                    {t('homepage-item-1-large')}
                 </P>
             </Container>
         </Layout>
