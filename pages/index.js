@@ -39,20 +39,6 @@ const Page = () => {
     const bgColors = useColorModeValue('#008080', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
 
-    /*
-    FOTO DE PERFIL (donde pfp)
-    <Image 
-        borderColor="whiteAlpha.800" 
-        borderWidth={2} 
-        borderStyle="solid" 
-        maxWidth="1000px" 
-        display="inline-block"
-        borderRadius="full"
-        src="/images/profile.jpg"
-        alt="Profile image"
-    />
-    */
-
     if (!hasMounted) {
         return null
     } else {
@@ -84,7 +70,16 @@ const Page = () => {
                         ml={{ md: 6 }}
                         align="center"
                     >
-                        PFP
+                        <Image 
+                            borderColor="whiteAlpha.800" 
+                            borderWidth={2} 
+                            borderStyle="solid" 
+                            maxWidth="1000px" 
+                            display="inline-block"
+                            borderRadius="full"
+                            src="/images/pfp.jpg"
+                            alt="Profile image"
+                        />
                     </Box>
 
                     <Section delay={0.1}>
