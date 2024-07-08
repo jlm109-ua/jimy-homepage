@@ -14,6 +14,7 @@ const WorkExperience = () => {
     const { t } = useTranslation('work-experience')
     const hasMounted = useHasMounted()
     const textColors = useColorModeValue('white', '#008080');
+    const leftTextColors = useColorModeValue('white', '#5e0a0a');
     const bgColors = useColorModeValue('#008080', 'white');
     const leftBgColors = useColorModeValue('#5e0a0a', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
@@ -37,7 +38,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="06/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 0 0 4px ' + invLeftBgColors }}
+                        contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<BookIcon />}
                     >
@@ -78,7 +79,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="05/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 3px 0 ' + invLeftBgColors }}
+                        contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<PizzaIcon />}
                     >
