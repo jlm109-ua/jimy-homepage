@@ -39,7 +39,7 @@ const WorkExperience = () => {
                         date="06/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
+                        contentArrowStyle={{ borderRight: `7px solid ${leftBgColors}` }}
                         icon={<BookIcon />}
                     >
                         <h3
@@ -87,7 +87,7 @@ const WorkExperience = () => {
                         date="05/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
+                        contentArrowStyle={{ borderRight: `7px solid ${leftBgColors}` }}
                         icon={<PizzaIcon />}
                     >
                         <h3
