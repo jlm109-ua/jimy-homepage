@@ -3,7 +3,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { useTranslation } from "react-i18next";
 import Layout from "../components/layouts/article";
 import { Container, Heading } from "@chakra-ui/react";
-import P from "../components/paragraph";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useColorModeValue } from "@chakra-ui/color-mode";
@@ -24,9 +23,6 @@ const WorkExperience = () => {
                 <Heading>
                     {t('work-experience')}
                 </Heading>
-                <P>
-                    {t('work-experience-desc')}
-                </P>
 
                 <VerticalTimeline>
                     <VerticalTimelineElement

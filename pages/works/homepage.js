@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import { Title } from '../../components/work'
 import P from '../../components/paragraph'
@@ -6,8 +6,8 @@ import Layout from '../../components/layouts/article'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import useHasMounted  from '../../components/useHasMounted'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import Link from 'next/link'
-import Meta from '../../components/work'
+import { Meta } from '../../components/work'
+
 const Work = () => {
     const { t } = useTranslation('common')
     const hasMounted = useHasMounted()
