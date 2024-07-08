@@ -15,7 +15,7 @@ const WorkExperience = () => {
     const hasMounted = useHasMounted()
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
-    const leftBgColors = useColorModeValue('white', '#5e0a0a');
+    const leftBgColors = useColorModeValue('#5e0a0a', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
     const invLeftBgColors = useColorModeValue('white', '#5e0a0a');
 
@@ -54,7 +54,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="05/2024 - Present"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                         icon={<BurgerIcon />}
                     >
@@ -78,7 +78,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="05/2024"
                         iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 0 0 4px ' + invLeftBgColors }}
+                        contentStyle={{ background: leftBgColors, color: 'white', boxShadow: '0 3px 0 ' + invLeftBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<PizzaIcon />}
                     >
@@ -95,7 +95,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="09/2023"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                         icon={<BookIcon />}
                     >
@@ -119,7 +119,7 @@ const WorkExperience = () => {
                         className="vertical-timeline-element--education"
                         date="07/2022"
                         iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 0 0 4px ' + invBgColors }}
+                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                         contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                         icon={<PizzaIcon />}
                     >
