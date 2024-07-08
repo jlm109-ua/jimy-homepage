@@ -10,6 +10,8 @@ import 'react-vertical-timeline-component/style.min.css';
 const WorkExperience = () => {
     const { t } = useTranslation('work-experience')
     const hasMounted = useHasMounted()
+    const textColors = useColorModeValue('white', '#008080');
+    const bgColors = useColorModeValue('#008080', 'white');
 
     if(!hasMounted) {
         return null
