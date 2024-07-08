@@ -38,6 +38,7 @@ const Page = () => {
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
+    const borderColors = useColorModeValue('whiteAlpha.800', '#008080');
 
     if (!hasMounted) {
         return null
@@ -71,10 +72,9 @@ const Page = () => {
                         align="center"
                     >
                         <Image 
-                            borderColor="whiteAlpha.800" 
-                            borderWidth={2} 
+                            borderColor={borderColors}
+                            borderWidth={1} 
                             borderStyle="solid" 
-                            maxWidth="1000px" 
                             display="inline-block"
                             borderRadius="full"
                             src="/images/pfp.jpg"
