@@ -22,7 +22,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 // Icons
-import { ChevronRightIcon } from '@chakra-ui/icons';
+//import { ChevronRightIcon } from '@chakra-ui/icons';
 //import WorkIcon from '../components/icons/work';
 //import SchoolIcon from '../components/icons/school';
 //import StarIcon from '../components/icons/star';
@@ -110,12 +110,22 @@ const Page = () => {
                         <Box align="center" my={4}>
                             <NextLink href="/works" passHref>
                                 <Button 
-                                    rightIcon={<ChevronRightIcon/>} 
                                     bg={bgColors}
                                     _hover={{ bg: '#006666' }}
                                     textColor={textColors}
                                 >
                                     {t('my-portfolio')}
+                                </Button>
+                            </NextLink>
+
+                            <NextLink href="/work-experience" passHref>
+                                <Button
+                                    bg={bgColors}
+                                    _hover={{ bg: '#006666' }}
+                                    textColor={textColors}
+                                    ml={2}
+                                >
+                                    {t('work-experience')}
                                 </Button>
                             </NextLink>
                         </Box>
