@@ -6,6 +6,7 @@ import { Container, Heading } from "@chakra-ui/react";
 import P from "../components/paragraph";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { useColorModeValue } from "@chakra-ui/color-mode";
 
 const WorkExperience = () => {
     const { t } = useTranslation('work-experience')

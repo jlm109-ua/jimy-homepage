@@ -8,7 +8,6 @@ import useHasMounted  from '../../components/useHasMounted'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import Meta from '../../components/work'
-
 const Work = () => {
     const { t } = useTranslation('common')
     const hasMounted = useHasMounted()
