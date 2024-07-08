@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import { Button, Container, Box, Heading, useColorModeValue, List, ListItem, Icon } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
+import Link from '../components/link';
 
 //import { BioSection, BioYear, BioText } from '../components/bio'; // Not used (Timeline instead)
 
@@ -30,7 +31,6 @@ import BookIcon from '../components/icons/book';
 
 // Social
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
-import { GridItem } from '../components/grid-item';
 
 const Page = () => {
     const { t } = useTranslation('common');

@@ -6,6 +6,8 @@ import Layout from '../../components/layouts/article'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import useHasMounted  from '../../components/useHasMounted'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import Link from 'next/link'
+import Meta from '../../components/work'
 
 const Work = () => {
     const { t } = useTranslation('common')
