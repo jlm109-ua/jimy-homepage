@@ -24,7 +24,9 @@ const WorkExperience = () => {
                     {t('work-experience')}
                 </Heading>
 
-                <VerticalTimeline>
+                <VerticalTimeline
+                    layout='1-column'
+                >
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="2020 - Present"
@@ -57,7 +59,7 @@ const WorkExperience = () => {
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-        ...(await serverSideTranslations(locale, ['common'])),
+        ...(await serverSideTranslations(locale, ['work-experience'])),
     },
 });
 
