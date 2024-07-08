@@ -133,11 +133,18 @@ const Page = () => {
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BookIcon />}
                             >
-                                <h3>
-                                    {t('bio-item-3')}
-                                </h3>
-                                <p
+                                <h3
                                     className='vertical-timeline-element-title'
+                                    style={{ 
+                                        fontWeight: 'bold'
+                                    }}
+                                >
+                                    {t('bio-item-3')}
+                                </h3>                                
+                                <p
+                                    style={{
+                                        fontWeight: 'normal'
+                                    }}
                                 >
                                     {t('bio-item-3-desc')}
                                 </p>
@@ -150,12 +157,19 @@ const Page = () => {
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BookIcon />}
                             >
-                                <h3 
-                                    className="vertical-timeline-element-title"
+                                <h3
+                                    className='vertical-timeline-element-title'
+                                    style={{ 
+                                        fontWeight: 'bold'
+                                    }}
                                 >
                                     {t('bio-item-2')}
                                 </h3>                                
-                                <p>
+                                <p
+                                    style={{
+                                        fontWeight: 'normal'
+                                    }}
+                                >
                                     {t('bio-item-2-desc')}
                                 </p>
                             </VerticalTimelineElement>
@@ -168,11 +182,18 @@ const Page = () => {
                                 icon={<BabyIcon />}
                             >
                                 <h3
-                                    className="vertical-timeline-element-title"
+                                    className='vertical-timeline-element-title'
+                                    style={{ 
+                                        fontWeight: 'bold'
+                                    }}
                                 >
                                     {t('bio-item-1')}
-                                </h3>
-                                <p>
+                                </h3>                                
+                                <p
+                                    style={{
+                                        fontWeight: 'normal'
+                                    }}
+                                >
                                     {t('bio-item-1-desc')}
                                 </p>
                             </VerticalTimelineElement>
