@@ -1,3 +1,15 @@
 {
-    "work-experience": "Experiencia Laboral"
+    "work-experience": "Experiencia Laboral",
+
+    "telepizza": "Telepizza",
+    "telepizza-role": "Repartidor",
+    "left-telepizza": "Dejé Telepizza",
+
+    "BUA": "Biblioteca de la Universidad de Alicante",
+    "BUA-role": "Técnico de Soporte Informático",
+    "left-BUA": "Dejé la BUA",
+
+    "bk": "Burger King",
+    "bk-role": "Repartidor",
+    "left-bk": "Dejé Burger King"
 }
