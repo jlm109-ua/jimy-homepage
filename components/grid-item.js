@@ -41,8 +41,6 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
 }
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
-    const borderColors = useColorModeValue('#008080', 'whiteAlpha.800');
-
     return (
         <Box
             w="100%"
