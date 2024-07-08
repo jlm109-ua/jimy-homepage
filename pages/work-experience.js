@@ -32,7 +32,7 @@ const WorkExperience = () => {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="06/2024"
-                        iconStyle={{ background: '##5e0a0a', color: 'white' }}
+                        iconStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<BookIcon />}
@@ -73,7 +73,7 @@ const WorkExperience = () => {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="05/2024"
-                        iconStyle={{ background: '##5e0a0a', color: 'white' }}
+                        iconStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentStyle={{ background: '#5e0a0a', color: 'white' }}
                         contentArrowStyle={{ borderRight: `7px solid ${'#5e0a0a'}` }}
                         icon={<PizzaIcon />}

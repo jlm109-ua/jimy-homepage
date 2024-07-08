@@ -6,7 +6,7 @@ const PizzaIcon = props => (
         viewBox="0 0 24 24" 
         xmlns="http://www.w3.org/2000/svg" 
         stroke="#FFFFFF" 
-        stroke-width="2"
+        stroke-width="0.00024000000000000003"
         {...props}
     >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
