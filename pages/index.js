@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Button, Container, Box, Heading, useColorModeValue } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, useColorModeValue, ListItem, Icon } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
@@ -27,6 +27,10 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 //import StarIcon from '../components/icons/star';
 import BabyIcon from '../components/icons/baby';
 import BookIcon from '../components/icons/book';
+
+// Social
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import { GridItem } from '../components/grid-item';
 
 const Page = () => {
     const { t } = useTranslation('common');
@@ -207,6 +211,24 @@ const Page = () => {
                         <Paragraph>
                             {t('I-love-text')} 
                         </Paragraph>
+                    </Section>
+
+                    <Section delay={0.4}>
+                        <Heading as="h3" variant="section-title">
+                            {t('social-title')}
+                        </Heading>
+                        <List>
+                            <ListItem>
+                                <Link href="https://linked.in/juan-llinares-mauri" target="_blank">
+                                    <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={IoLogoLinkedin}/>}>Juan Llinares Mauri</Button>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Link href="https://github.com/jlm109-ua" target="_blank">
+                                    <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={IoLogoGithub}/>}>@jlm109-ua</Button>
+                                </Link>
+                            </ListItem>
+                        </List>
                     </Section>
                 </Container>
             </Layout>
