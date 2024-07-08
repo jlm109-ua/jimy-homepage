@@ -37,6 +37,7 @@ const Page = () => {
     const hasMounted = useHasMounted();
     const textColors = useColorModeValue('white', '#008080');
     const bgColors = useColorModeValue('#008080', 'white');
+    const invBgColors = useColorModeValue('white', '#008080');
 
     /*
     FOTO DE PERFIL (donde pfp)
@@ -143,7 +144,7 @@ const Page = () => {
                                 className="vertical-timeline-element--education"
                                 date="2020 - Present"
                                 iconStyle={{ background: '#008080', color: 'white' }}
-                                contentStyle={{ background: bgColors, color: textColors }}
+                                contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BookIcon />}
                             >
@@ -167,7 +168,7 @@ const Page = () => {
                                 className="vertical-timeline-element--education"
                                 date="2014 - 2020"
                                 iconStyle={{ background: '#008080', color: 'white'}}
-                                contentStyle={{ background: bgColors, color: textColors }}
+                                contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BookIcon />}
                             >
@@ -191,7 +192,7 @@ const Page = () => {
                                 className='vertical-timeline-element--education'
                                 date="2002"
                                 iconStyle={{ background: '#008080', color: 'white' }}
-                                contentStyle={{ background: bgColors, color: textColors }}
+                                contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
                                 contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
                                 icon={<BabyIcon />}
                             >
