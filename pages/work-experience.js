@@ -2,8 +2,7 @@ import useHasMounted from "../components/useHasMounted"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { useTranslation } from "react-i18next";
 import Layout from "../components/layouts/article";
-import { Container } from "@chakra-ui/react";
-import Title from "../components/work";
+import { Container, Heading } from "@chakra-ui/react";
 import P from "../components/paragraph";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -19,9 +18,9 @@ const WorkExperience = () => {
     return (
         <Layout>
             <Container>
-                <Title>
+                <Heading>
                     {t('work-experience')}
-                </Title>
+                </Heading>
                 <P>
                     {t('work-experience-desc')}
                 </P>

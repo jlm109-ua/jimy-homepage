@@ -3,6 +3,7 @@
 
     
     "works": "Trabajos",
+    "work-exp": "Experiencia laboral",
 
  
     "welcome": "¡Hola, soy Jimy!",
@@ -13,7 +14,7 @@
     "about-text": "Soy Juan Llinares, también conocido como Jimy, un apasionado de los coches y de la tecnología y siempre estoy buscando nuevos desafíos con los que mejorar mis habilidades. Actualmente estoy terminando mi grado en Ingeniería Informática en la Universidad de Alicante.",
 
     "my-portfolio": "Mi portfolio",
-    "work-experience": "Mi experiencia laboral",
+    "my-work-exp": "Mi experiencia laboral",
 
     "bio-title": "Biografía",
     "bio-item-1": "Nací en Villajoyosa",

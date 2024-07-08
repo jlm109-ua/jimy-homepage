@@ -13,38 +13,38 @@ const Works = () => {
 
     if(!hasMounted) {
         return null
-    } else {
-        return (
-            <Layout>
-                <Container>
-                    <Heading as="h3" fontSize={20} mb={4}>
-                        {t('works')}
-                    </Heading>
-                    <SimpleGrid
-                        columns={[1, 1, 1]}
-                        gap={6}
-                    >
-                        <Section>
-                            <WorkGridItem
-                                id="homepage"
-                                title={t('homepage-item-1')}
-                                thumbnail={missingImage}
-                            >
-                                {t('homepage-item-1-desc')}
-                            </WorkGridItem>
-                            <WorkGridItem
-                                id="otroProyecto"
-                                title={t('homepage-item-2')}
-                                thumbnail={missingImage}
-                            >
-                                {t('homepage-item-2-desc')}
-                            </WorkGridItem>
-                        </Section>
-                    </SimpleGrid>
-                </Container>
-            </Layout>
-        )
     }
+
+    return (
+        <Layout>
+            <Container>
+                <Heading as="h3" fontSize={20} mb={4}>
+                    {t('works')}
+                </Heading>
+                <SimpleGrid
+                    columns={[1, 1, 1]}
+                    gap={6}
+                >
+                    <Section>
+                        <WorkGridItem
+                            id="homepage"
+                            title={t('homepage-item-1')}
+                            thumbnail={missingImage}
+                        >
+                            {t('homepage-item-1-desc')}
+                        </WorkGridItem>
+                        <WorkGridItem
+                            id="otroProyecto"
+                            title={t('homepage-item-2')}
+                            thumbnail={missingImage}
+                        >
+                            {t('homepage-item-2-desc')}
+                        </WorkGridItem>
+                    </Section>
+                </SimpleGrid>
+            </Container>
+        </Layout>
+    )
 }
 
 export const getStaticProps = async ({ locale }) => ({

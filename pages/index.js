@@ -125,7 +125,7 @@ const Page = () => {
                                     textColor={textColors}
                                     ml={2}
                                 >
-                                    {t('work-experience')}
+                                    {t('my-work-exp')}
                                 </Button>
                             </NextLink>
                         </Box>

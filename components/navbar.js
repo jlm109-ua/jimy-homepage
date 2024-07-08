@@ -81,7 +81,7 @@ const Navbar = props => {
                         mt={{base: 4, nmd: 0}}
                     >
                         <LinkItem href="/works" path={path}>{t('works')}</LinkItem>
-                        <LinkItem href="/work-experience" path={path}>{t('work-experience')}</LinkItem>
+                        <LinkItem href="/work-experience" path={path}>{t('work-exp')}</LinkItem>
                     </Stack>
                     <Box flex={1} align="right" margin-right={1}>
 
@@ -101,7 +101,7 @@ const Navbar = props => {
                                         <MenuItem as="a">{t('works')}</MenuItem>
                                     </NextLink>
                                     <NextLink href="/work-experience" passHref>
-                                        <MenuItem as="a">{t('work-experience')}</MenuItem>
+                                        <MenuItem as="a">{t('work-exp')}</MenuItem>
                                     </NextLink>
                                 </MenuList>
                             </Menu>
