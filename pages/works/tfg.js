@@ -1,11 +1,11 @@
-import { Container, Badge, Title, List, ListItem, Link } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import useHasMounted  from '../../components/useHasMounted'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Meta } from '../../components/work'
+import { Meta, Title } from '../../components/work'
 
 const TFG = () => {
     const { t } = useTranslation('tfg')
