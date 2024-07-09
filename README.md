@@ -1,4 +1,4 @@
-# My portfolio!
+# My homepage!
 
 Visit my website [here](https://github.com/jlm109-ua/jimy-homepage).
 
