@@ -31,130 +31,84 @@ const WorkExperience = () => {
                     {t('work-experience')}
                 </Heading>
 
-                <VerticalTimeline
-                    layout='1-column'
-                >
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="06/2024"
-                        iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${leftBgColors}` }}
-                        icon={<BookIcon />}
+                <Section delay={0.1}>
+                    <VerticalTimeline
+                        layout='1-column'
                     >
-                        <h3
-                            className='vertical-timeline-element-title'
-                            style={{ 
-                                fontWeight: 'bold'
-                            }}
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="05/2024 - Present"
+                            iconStyle={{ background: '#008080', color: 'white' }}
+                            contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
+                            contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
+                            icon={<BurgerIcon />}
                         >
-                            {t('left-BUA')}
-                        </h3>
-                        <p
-                            style={{
-                                fontWeight: 'normal'
-                            }}
+                            <h3
+                                className='vertical-timeline-element-title'
+                                style={{ 
+                                    fontWeight: 'bold'
+                                }}
+                            >
+                                {t('bk')}
+                            </h3>                                
+                            <p
+                                style={{
+                                    fontWeight: 'normal'
+                                }}
+                            >
+                                {t('bk-role')}
+                            </p>
+                        </VerticalTimelineElement>               
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="09/2023 - 06/2024"
+                            iconStyle={{ background: '#008080', color: 'white' }}
+                            contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
+                            contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
+                            icon={<BookIcon />}
                         >
-                            {t('BUA-role')}
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="05/2024 - Present"
-                        iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={<BurgerIcon />}
-                    >
-                        <h3
-                            className='vertical-timeline-element-title'
-                            style={{ 
-                                fontWeight: 'bold'
-                            }}
+                            <h3
+                                className='vertical-timeline-element-title'
+                                style={{ 
+                                    fontWeight: 'bold'
+                                }}
+                            >
+                                {t('BUA')}
+                            </h3>                                
+                            <p
+                                style={{
+                                    fontWeight: 'normal'
+                                }}
+                            >
+                                {t('BUA-role')}
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="07/2022 - 05/2024"
+                            iconStyle={{ background: '#008080', color: 'white' }}
+                            contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
+                            contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
+                            icon={<PizzaIcon />}
                         >
-                            {t('bk')}
-                        </h3>                                
-                        <p
-                            style={{
-                                fontWeight: 'normal'
-                            }}
-                        >
-                            {t('bk-role')}
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="05/2024"
-                        iconStyle={{ background: '#5e0a0a', color: 'white' }}
-                        contentStyle={{ background: leftBgColors, color: leftTextColors, boxShadow: '0 3px 0 ' + invLeftBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${leftBgColors}` }}
-                        icon={<PizzaIcon />}
-                    >
-                        <h3
-                            className='vertical-timeline-element-title'
-                            style={{ 
-                                fontWeight: 'bold'
-                            }}
-                        >
-                            {t('left-telepizza')}
-                        </h3>
-                        <p
-                            style={{
-                                fontWeight: 'normal'
-                            }}
-                        >
-                            {t('telepizza-role')}
-                        </p>                       
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="09/2023"
-                        iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={<BookIcon />}
-                    >
-                        <h3
-                            className='vertical-timeline-element-title'
-                            style={{ 
-                                fontWeight: 'bold'
-                            }}
-                        >
-                            {t('BUA')}
-                        </h3>                                
-                        <p
-                            style={{
-                                fontWeight: 'normal'
-                            }}
-                        >
-                            {t('BUA-role')}
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="07/2022"
-                        iconStyle={{ background: '#008080', color: 'white' }}
-                        contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
-                        contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
-                        icon={<PizzaIcon />}
-                    >
-                        <h3
-                            className='vertical-timeline-element-title'
-                            style={{ 
-                                fontWeight: 'bold'
-                            }}
-                        >
-                            {t('telepizza')}
-                        </h3>                                
-                        <p
-                            style={{
-                                fontWeight: 'normal'
-                            }}
-                        >
-                            {t('telepizza-role')}
-                        </p>
-                    </VerticalTimelineElement>
-                </VerticalTimeline>                    
+                            <h3
+                                className='vertical-timeline-element-title'
+                                style={{ 
+                                    fontWeight: 'bold'
+                                }}
+                            >
+                                {t('telepizza')}
+                            </h3>                                
+                            <p
+                                style={{
+                                    fontWeight: 'normal'
+                                }}
+                            >
+                                {t('telepizza-role')}
+                            </p>
+                        </VerticalTimelineElement>
+                    </VerticalTimeline>
+                </Section>            
             </Container>
         </Layout>
     )
