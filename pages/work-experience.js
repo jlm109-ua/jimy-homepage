@@ -9,16 +9,14 @@ import { useColorModeValue } from "@chakra-ui/color-mode";
 import PizzaIcon from "../components/icons/pizza";
 import BookIcon from "../components/icons/book";
 import BurgerIcon from "../components/icons/bk";
+import Section from "../components/section";
 
 const WorkExperience = () => {
     const { t } = useTranslation('work-experience')
     const hasMounted = useHasMounted()
     const textColors = useColorModeValue('white', '#008080');
-    const leftTextColors = useColorModeValue('white', '#5e0a0a');
     const bgColors = useColorModeValue('#008080', 'white');
-    const leftBgColors = useColorModeValue('#5e0a0a', 'white');
     const invBgColors = useColorModeValue('white', '#008080');
-    const invLeftBgColors = useColorModeValue('white', '#5e0a0a');
 
     if(!hasMounted) {
         return null
