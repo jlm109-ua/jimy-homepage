@@ -1,21 +1,13 @@
 {
     "tab-title": "Jimy - Homepage",
-
-    
     "works": "Works",
     "work-exp": "Work Experience",
-
-
     "welcome": "Hello! I'm Jimy!",
-
     "subtitle": "Software Developer",
-
     "about-title": "About me",
     "about-text": "I am Juan Llinares, also known as Jimy, passionate about cars and technology, and always looking for new challenges to improve my skills. I am currently finishing my degree in Computer Science at the University of Alicante.",
-
     "my-portfolio": "My portfolio",
     "my-work-exp": "My Work Experience",
-
     "bio-title": "Biography",
     "bio-item-1": "Born in Villajoyosa",
     "bio-item-1-desc": "A small town in the province of Alicante, Spain.",
@@ -23,25 +15,23 @@
     "bio-item-2-desc": "In the IES Marina Baixa, at Villajoyosa.",
     "bio-item-3": "Started Computer Science Degree",
     "bio-item-3-desc": "At the University of Alicante.",
-
     "I-love-title": "I love",
     "I-love-text": "Programming, cars, graphic design, music, and Machine Learning.",
-
-
     "homepage-item-1": "My homepage!",
     "homepage-item-1-desc": "Jimy's personal page.",
     "homepage-item-1-large": "My personal page. I have created it to show my works and projects, and for you to get to know me a little better. I hope you like it!",
     "homepage-item-2": "My TFG",
     "homepage-item-2-desc": "My Final Degree Project at the UA.",
     "homepage-item-2-large": "My Final Degree Project at the University of Alicante. It is a Machine Learning project... COMPLETAR",
-
+    "homepage-item-3": "Duskies Webpage",
+    "homepage-item-3-desc": "A webpage for the crew Duskies.",
+    "homepage-item-3-large": "A webpage for Duskies, a crew of modified cars. In this website you can find information about the crew, the cars, the members, the events, and much more.",
+    "homepage-item-3-large-2": "The webpage was made by:",
     "not-found": "Page not found",
     "not-found-desc": "The page you are looking for does not exist.",
     "back-home": "Back to home",
-
-
     "loading": "Loading...",
-
-
-    "social-title": "My social networks"
+    "social-title": "My social networks",
+    "finished": "Finished",
+    "in-progress": "In progress"
 }

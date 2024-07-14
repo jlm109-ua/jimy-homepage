@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Badge } from '@chakra-ui/react'
 import Section from '../components/section'
 import useHasMounted from '../components/useHasMounted'
 import { WorkGridItem } from '../components/grid-item'
@@ -7,12 +7,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from '../components/layouts/article';
 import homepage from '../public/images/homepage.jpg'
 import tfg from '../public/images/tfg.jpg'
+import duskiesWebpage from '../public/images/duskies.jpg'
 
 const Works = () => {
     const hasMounted = useHasMounted();
     const { t } = useTranslation('common');
 
-    if(!hasMounted) {
+    if (!hasMounted) {
         return null
     }
 
@@ -32,6 +33,9 @@ const Works = () => {
                             thumbnail={homepage}
                         >
                             {t('homepage-item-1-desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme='teal'>{t('finished')}</Badge>
+                            </Box>
                         </WorkGridItem>
                         <WorkGridItem
                             id="tfg"
@@ -39,6 +43,19 @@ const Works = () => {
                             thumbnail={tfg}
                         >
                             {t('homepage-item-2-desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme='teal'>{t('finished')}</Badge>
+                            </Box>
+                        </WorkGridItem>
+                        <WorkGridItem
+                            id="duskies-webpage"
+                            title={t('homepage-item-3')}
+                            thumbnail={duskiesWebpage}
+                        >
+                            {t('homepage-item-3-desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme='red'>{t('in-progress')}</Badge>
+                            </Box>
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>

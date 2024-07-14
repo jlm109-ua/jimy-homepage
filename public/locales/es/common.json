@@ -1,21 +1,13 @@
 {
     "tab-title": "Jimy - Inicio",
-
-    
     "works": "Trabajos",
     "work-exp": "Experiencia laboral",
-
- 
     "welcome": "¡Hola, soy Jimy!",
-
     "subtitle": "Desarrollador Software",
-
     "about-title": "Sobre mí",
     "about-text": "Soy Juan Llinares, también conocido como Jimy, un apasionado de los coches y de la tecnología y siempre estoy buscando nuevos desafíos con los que mejorar mis habilidades. Actualmente estoy terminando mi grado en Ingeniería Informática en la Universidad de Alicante.",
-
     "my-portfolio": "Mi portfolio",
     "my-work-exp": "Mi experiencia laboral",
-
     "bio-title": "Biografía",
     "bio-item-1": "Nací en Villajoyosa",
     "bio-item-1-desc": "Un pequeño pueblo de la provincia de Alicante, España.",
@@ -23,26 +15,23 @@
     "bio-item-2-desc": "En el IES Marina Baixa, en Villajoyosa.",
     "bio-item-3": "Empecé el Grado en Ingeniería Informática",
     "bio-item-3-desc": "En la Universidad de Alicante.",
-
     "I-love-title": "Me encanta",
     "I-love-text": "Programar, los coches, el diseño gráfico, la música y el Machine Learning.",
-
-
     "homepage-item-1": "¡Mi página!",
     "homepage-item-1-desc": "Página personal de Jimy.",
     "homepage-item-1-large": "Mi página personal. La he creado para mostrar mis trabajos y proyectos, y para que puedas conocerme un poco mejor. ¡Espero que te guste!",
     "homepage-item-2": "Mi TFG",
     "homepage-item-2-desc": "Mi Trabajo de Fin de Grado en la UA.",
     "homepage-item-2-large": "Mi Trabajo de Fin de Grado en la Universidad de Alicante. Se trata de un proyecto de Machine Learning... COMPLETAR",
-
-
+    "homepage-item-3": "Página web de Duskies",
+    "homepage-item-3-desc": "Una página web para la crew Duskies.",
+    "homepage-item-3-large": "Una página web para Duskies, una crew de coches modificados. En esta web puedes encontrar información sobre la crew, los coches, los miembros, los eventos y mucho más.",
+    "homepage-item-3-large-2": "La página web fue realizada por:",
     "not-found": "Página no encontrada",
     "not-found-desc": "La página que buscas no existe.",
     "back-home": "Volver a inicio",
-
-
     "loading": "Cargando...",
-
-
-    "social-title": "Mis redes sociales"
+    "social-title": "Mis redes sociales",
+    "finished": "Finalizado",
+    "in-progress": "En progreso"
 }
