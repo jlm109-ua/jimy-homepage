@@ -33,5 +33,7 @@
     "loading": "Loading...",
     "social-title": "My social networks",
     "finished": "Finished",
-    "in-progress": "In progress"
+    "in-progress": "In progress",
+    "cv-title": "My CV",
+    "cv-desc": "Download my CV here!"
 }

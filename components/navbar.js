@@ -4,7 +4,7 @@ import useHasMounted from './useHasMounted' // Fix the issue of window not defin
 import {
     Container,
     Box,
-    Link, 
+    Link,
     Stack,
     Heading,
     Flex,
@@ -20,13 +20,13 @@ import ThemeToggleButton from './theme-toggle-button'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './language-switcher-button'
 
-const LinkItem = ({ href, path, children}) => {
+const LinkItem = ({ href, path, children }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('black', 'whiteAlpha.900')
 
     return (
         <NextLink href={href} passHref>
-            <Link 
+            <Link
                 p={2}
                 bg={active ? '#008080' : undefined}
                 color={active ? '202023' : inactiveColor}
@@ -55,16 +55,16 @@ const Navbar = props => {
                 as="nav"
                 w="100%"
                 bg={bgColors}
-                style={{backdropFilter: 'blur(10px)'}}
+                style={{ backdropFilter: 'blur(10px)' }}
                 zIndex={1}
                 {...props}
             >
-                <Container 
-                    display={"flex"} 
-                    p={2} 
-                    maxW="container.md" 
-                    wrap="wrap" 
-                    align="center" 
+                <Container
+                    display={"flex"}
+                    p={2}
+                    maxW="container.md"
+                    wrap="wrap"
+                    align="center"
                     justify="space-between"
                 >
                     <Flex align="center" mr={5}>
@@ -72,27 +72,28 @@ const Navbar = props => {
                             <Logo />
                         </Heading>
                     </Flex>
-    
+
                     <Stack
-                        direction={{base: 'column', md: 'row'}}
-                        display={{base: 'none', md: 'flex'}}
-                        width={{base: 'full', md: 'auto'}}
+                        direction={{ base: 'column', md: 'row' }}
+                        display={{ base: 'none', md: 'flex' }}
+                        width={{ base: 'full', md: 'auto' }}
                         flexGrow={1}
-                        mt={{base: 4, nmd: 0}}
+                        mt={{ base: 4, nmd: 0 }}
                     >
                         <LinkItem href="/works" path={path}>{t('works')}</LinkItem>
                         <LinkItem href="/work-experience" path={path}>{t('work-exp')}</LinkItem>
                     </Stack>
+
                     <Box flex={1} align="right" margin-right={1}>
 
                         <LanguageSwitcher />
-                        <ThemeToggleButton/>
-                        
-                        <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                        <ThemeToggleButton />
+
+                        <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                             <Menu>
                                 <MenuButton
                                     as={IconButton}
-                                    icon={<HamburgerIcon/>}
+                                    icon={<HamburgerIcon />}
                                     variant="outline"
                                     aria-label="Options"
                                 />
