@@ -35,6 +35,30 @@ const WorkExperience = () => {
                     >
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
+                            date="09/2024 - Present"
+                            iconStyle={{ background: '#008080', color: 'white' }}
+                            contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
+                            contentArrowStyle={{ borderRight: `7px solid ${bgColors}` }}
+                            icon={<BookIcon />}
+                        >
+                            <h3
+                                className='vertical-timeline-element-title'
+                                style={{ 
+                                    fontWeight: 'bold'
+                                }}
+                            >
+                                {t('BUA')}
+                            </h3>                                
+                            <p
+                                style={{
+                                    fontWeight: 'normal'
+                                }}
+                            >
+                                {t('BUA-role')}
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
                             date="05/2024 - Present"
                             iconStyle={{ background: '#008080', color: 'white' }}
                             contentStyle={{ background: bgColors, color: textColors, boxShadow: '0 3px 0 ' + invBgColors }}
