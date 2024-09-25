@@ -8,6 +8,7 @@ import Layout from '../components/layouts/article';
 import homepage from '../public/images/homepage.jpg'
 import tfg from '../public/images/tfg.jpg'
 import duskiesWebpage from '../public/images/duskies.jpg'
+import todojimy from '../public/images/todojimy.jpg'
 
 const Works = () => {
     const hasMounted = useHasMounted();
@@ -55,6 +56,16 @@ const Works = () => {
                             {t('homepage-item-3-desc')}
                             <Box mt={2}>
                                 <Badge colorScheme='red'>{t('in-progress')}</Badge>
+                            </Box>
+                        </WorkGridItem>
+                        <WorkGridItem
+                            id="todojimy"
+                            title={t('homepage-item-4.title')}
+                            thumbnail={homepage}
+                        >
+                            {t('homepage-item-4.desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme='teal'>{t('finished')}</Badge>
                             </Box>
                         </WorkGridItem>
                     </Section>
