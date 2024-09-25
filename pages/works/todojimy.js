@@ -8,8 +8,8 @@ import { Meta, Title } from '../../components/work';
 import P from '../../components/paragraph';
 
 const ToDoJimy = () => {
-    const { t } = useTranslation('homepage-item-4');
-    const hasMounted = useHasMounted();
+    const { t } = useTranslation('common')
+    const hasMounted = useHasMounted()
 
     if (!hasMounted) {
         return null;
@@ -19,63 +19,62 @@ const ToDoJimy = () => {
         <Layout title="ToDoJimy">
             <Container>
                 <Title>
-                    {t('title')}
+                    {t('homepage-item-4-title')}
                     <Badge ml={1}>2024</Badge>
                 </Title>
 
-                <P>{t('intro')}</P>
+                <P>{t('homepage-item-4-intro')}</P>
 
-                <List spacing={2} mt={4}>
+                <List>
                     <ListItem>
-                        <Meta>{t('frontend-title')}</Meta>
-                        <ul>
-                            <li>{t('frontend-1')}</li>
-                            <li>{t('frontend-2')}</li>
-                            <li>{t('frontend-3')}</li>
-                            <li>{t('frontend-4')}</li>
-                            <li>{t('frontend-5')}</li>
-                            <li>{t('frontend-6')}</li>
-                            <li>{t('frontend-7')}</li>
-                            <li>{t('frontend-8')}</li>
-                        </ul>
+                        <Meta>GitHub</Meta>
+                        <Link href="https://github.com/jlm109-ua/todojimy">
+                            https://github.com/jlm109-ua/todojimy <ExternalLinkIcon mx="2px" />
+                        </Link>
                     </ListItem>
-
                     <ListItem>
-                        <Meta>{t('backend-title')}</Meta>
-                        <ul>
-                            <li>{t('backend-1')}</li>
-                            <li>{t('backend-2')}</li>
-                        </ul>
-                    </ListItem>
-
-                    <ListItem>
-                        <Meta>{t('features-title')}</Meta>
-                        <ul>
-                            <li>{t('features-1')}</li>
-                            <li>{t('features-2')}</li>
-                            <li>{t('features-3')}</li>
-                            <li>{t('features-4')}</li>
-                            <li>{t('features-5')}</li>
-                            <li>{t('features-6')}</li>
-                        </ul>
-                    </ListItem>
-
-                    <ListItem>
-                        <Meta>{t('optimizations-title')}</Meta>
-                        <ul>
-                            <li>{t('optimizations-1')}</li>
-                            <li>{t('optimizations-2')}</li>
-                            <li>{t('optimizations-3')}</li>
-                        </ul>
-                    </ListItem>
-
-                    <ListItem>
-                        <Meta>{t('deployment-title')}</Meta>
-                        <P>{t('deployment-desc')}</P>
+                        <Meta>App</Meta>
+                        <Link href="todojimy.vercel.app">
+                            todojimy.vercel.app <ExternalLinkIcon mx="2px" />
+                        </Link>
                     </ListItem>
                 </List>
 
-                <P>{t('conclusion')}</P>
+                <List spacing={2} mt={4}>
+                    <ListItem>
+                        <Meta>{t('homepage-item-4-frontend-title')}</Meta>
+                        <ul>
+                            <li>{t('homepage-item-4-frontend-1')}</li>
+                            <li>{t('homepage-item-4-frontend-2')}</li>
+                            <li>{t('homepage-item-4-frontend-3')}</li>
+                            <li>{t('homepage-item-4-frontend-4')}</li>
+                            <li>{t('homepage-item-4-frontend-5')}</li>
+                        </ul>
+                    </ListItem>
+
+                    <ListItem>
+                        <Meta>{t('homepage-item-4-backend-title')}</Meta>
+                        <ul>
+                            <li>{t('homepage-item-4-backend-1')}</li>
+                        </ul>
+                    </ListItem>
+
+                    <ListItem>
+                        <Meta>{t('homepage-item-4-features-title')}</Meta>
+                        <ul>
+                            <li>{t('homepage-item-4-features-1')}</li>
+                            <li>{t('homepage-item-4-features-2')}</li>
+                            <li>{t('homepage-item-4-features-3')}</li>
+                            <li>{t('homepage-item-4-features-4')}</li>
+                            <li>{t('homepage-item-4-features-5')}</li>
+                        </ul>
+                    </ListItem>
+
+                    <ListItem>
+                        <Meta>{t('homepage-item-4-deployment-title')}</Meta>
+                        <P>{t('homepage-item-4-deployment-desc')}</P>
+                    </ListItem>
+                </List>
             </Container>
         </Layout>
     );
@@ -83,7 +82,7 @@ const ToDoJimy = () => {
 
 export const getStaticProps = async ({ locale }) => ({
     props: {
-        ...(await serverSideTranslations(locale, ['common', 'homepage-item-4'])),
+        ...(await serverSideTranslations(locale, ['common'])),
     },
 });
 
