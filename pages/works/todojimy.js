@@ -34,7 +34,7 @@ const ToDoJimy = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>App</Meta>
-                        <Link href="todojimy.vercel.app">
+                        <Link href="https://todojimy.vercel.app">
                             todojimy.vercel.app <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
