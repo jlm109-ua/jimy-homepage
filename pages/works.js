@@ -11,7 +11,7 @@ import duskiesWebpage from '../public/images/duskies.jpg'
 import todojimy from '../public/images/todojimy.png'
 //import alex from '../public/images/alex.png'
 import hangman from '../public/images/hangman.png'
-import memojimy from '../public/images/missingImage.png'
+import memojimy from '../public/images/memojimy.png'
 
 const Works = () => {
     const hasMounted = useHasMounted()
