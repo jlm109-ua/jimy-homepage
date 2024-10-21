@@ -11,6 +11,7 @@ import duskiesWebpage from '../public/images/duskies.jpg'
 import todojimy from '../public/images/todojimy.png'
 //import alex from '../public/images/alex.png'
 import hangman from '../public/images/hangman.png'
+import memojimy from '../public/images/missingImage.png'
 
 const Works = () => {
     const hasMounted = useHasMounted()
@@ -28,6 +29,12 @@ const Works = () => {
                 </Heading>
                 <SimpleGrid columns={[1, 1, 1]}>
                     <Section>
+                        <WorkGridItem id="memojimy" title={t('homepage-item-7-title')} thumbnail={memojimy}>
+                            {t('homepage-item-7-desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme="teal">{t('finished')}</Badge>
+                            </Box>
+                        </WorkGridItem>
                         <WorkGridItem id="hangman" title={t('homepage-item-6-title')} thumbnail={hangman}>
                             {t('homepage-item-6-desc')}
                             <Box mt={2}>
