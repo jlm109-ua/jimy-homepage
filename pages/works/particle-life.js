@@ -1,11 +1,11 @@
 'use client'
 
-import { Container, Badge, List, ListItem, Link } from '@/components/ui/container'
+import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import Layout from '../../components/layouts/article'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import useHasMounted from '../../components/useHasMounted'
-import { ExternalLinkIcon } from 'lucide-react'
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Meta, Title } from '../../components/work'
 import P from '../../components/paragraph'
 
@@ -42,7 +42,7 @@ const ParticleLife = () => {
                     </ListItem>
                 </List>
 
-                <List className="mt-4 space-y-2">
+                <List spacing={2} mt={4}>
                     <ListItem>
                         <Meta>{t('homepage-item-8-features-title')}</Meta>
                         <ul>
@@ -67,6 +67,9 @@ const ParticleLife = () => {
 
                     <ListItem>
                         <Meta>{t('homepage-item-8-collab-title')}</Meta>
+                        <Link href="https://github.com/hxst1">
+                            hxst1 <ExternalLinkIcon className="inline h-4 w-4" />
+                        </Link>
                         <p>{t('homepage-item-8-collab-text')}</p>
                     </ListItem>
                 </List>
