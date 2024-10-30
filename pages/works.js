@@ -29,6 +29,12 @@ const Works = () => {
                 </Heading>
                 <SimpleGrid columns={[1, 1, 1]}>
                     <Section>
+                        <WorkGridItem id="particle-life" title={t('homepage-item-8-title')} thumbnail={memojimy}>
+                            {t('homepage-item-8-desc')}
+                            <Box mt={2}>
+                                <Badge colorScheme="teal">{t('finished')}</Badge>
+                            </Box>
+                        </WorkGridItem>
                         <WorkGridItem id="memojimy" title={t('homepage-item-7-title')} thumbnail={memojimy}>
                             {t('homepage-item-7-desc')}
                             <Box mt={2}>
