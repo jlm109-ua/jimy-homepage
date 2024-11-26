@@ -7,8 +7,6 @@ import Link from 'next/link';
 
 import { saveAs } from "file-saver";
 
-//import { BioSection, BioYear, BioText } from '../components/bio'; // Not used (Timeline instead)
-
 // Translation
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -24,10 +22,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 // Icons
-//import { ChevronRightIcon } from '@chakra-ui/icons';
-//import WorkIcon from '../components/icons/work';
-//import SchoolIcon from '../components/icons/school';
-//import StarIcon from '../components/icons/star';
 import BabyIcon from '../components/icons/baby';
 import BookIcon from '../components/icons/book';
 
