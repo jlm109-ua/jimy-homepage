@@ -69,6 +69,7 @@ const Works = () => {
                                 <Badge colorScheme="teal">{t('finished')}</Badge>
                             </Box>
                         </WorkGridItem>
+                        {/*
                         <WorkGridItem
                             id="duskies-webpage"
                             title={t('homepage-item-3')}
@@ -79,6 +80,7 @@ const Works = () => {
                                 <Badge colorScheme="red">{t('in-progress')}</Badge>
                             </Box>
                         </WorkGridItem>
+                        */}
                         <WorkGridItem id="tfg" title={t('homepage-item-2')} thumbnail={tfg}>
                             {t('homepage-item-2-desc')}
                             <Box mt={2}>
